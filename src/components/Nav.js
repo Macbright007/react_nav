@@ -3,12 +3,15 @@ import { Navigation, NavItems } from './styles'
 
 const Nav = () => {
   return (
-  <Navigation>
+    <Navigation>
       <h1><span>Be.</span>blog</h1>
+
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
       <NavItems>
-          <button>LogIn</button>
+        <button>LogIn</button>
       </NavItems>
-  </Navigation>
+    </Navigation>
   )
 }
 

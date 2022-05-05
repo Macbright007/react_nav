@@ -23,6 +23,23 @@ export const Navigation = styled.div`
         font-family: 'Water Brush', cursive;
         font-size: 3rem;
     }
+
+    label{
+        display: none;
+        color: #00474b;
+        font-size: 3rem;
+    }
+    input{
+        display: none;
+    }
+
+    @media (max-width: 650px){
+    label{
+        display: block;
+        cursor: pointer;
+        margin-left: 120px;
+    }
+} 
 `
 
 export const NavItems = styled.div`
@@ -43,6 +60,11 @@ export const NavItems = styled.div`
         color: #00474b;
         border: 2px solid #00474b;
     }
+@media (max-width: 650px){
+    button{
+        display: none;
+    }
+}
 
 `
 
@@ -51,6 +73,10 @@ export const CardContainer = styled.div`
     max-width: 800px;
     margin: 60px auto;
     padding: 30px;
+
+    &:nth-child(even) img{
+        order: 2;
+    }
 `
 
 export const InnerCard = styled.div`
@@ -60,8 +86,14 @@ export const InnerCard = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
+    max-width: 800px;
     background-color: #fff;
-    box-shadow: 7px 5px ;
+
+    &:hover{
+    cursor: pointer;
+    transition: box-shadow 200ms ease 0s, transform 200ms ease 0s;
+    }
+
 
     img{
         width: 100%;
@@ -74,8 +106,45 @@ export const InnerCard = styled.div`
     .rightContent{
         background-color: #00474bb5;
         border-radius: 30px;
+        height: 50vh;
+        object-fit: cover;
         border-top-left-radius: 0px;
         /* border-bottom-left-radius: 0px; */
+    }
+
+    .rightContent p{
+        font-size: 3rem;
+        font-family: 'Water Brush', cursive;
+        color: #fff;
+    }
+    .rightContent h3{
+        font-family: cursive;
+        font-size: 1.2rem;
+        margin-top: -30px;
+        color: white;
+        line-height: 10px;
+    }
+
+    .rightContent button{
+        padding: 13px;
+        width: 30%;
+        background-color: #f9d56a;
+        border: none;
+        border-radius: 10px;
+        font-weight: 700;
+        font-family: cursive;
+    }
+
+    .rightContent button:hover{
+        background-color: #be7c36;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    @media (max-width: 650px) {
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: auto;
     }
 `
 

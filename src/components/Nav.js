@@ -16,7 +16,6 @@ const Nav = () => {
         <a>Home</a>
         <a>About</a>
         <a>Blog</a>
-        
       </div>
       {/* <NavItems>
         <button>LogIn</button>

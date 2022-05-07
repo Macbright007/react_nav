@@ -54,7 +54,7 @@ export const Navigation = styled.div`
       right: -53px;
       margin: 70px;
     }
-    .navContent:hover{
+    .navContent a:hover{
         background-color: white;
         color: #00474b;
         cursor: pointer;

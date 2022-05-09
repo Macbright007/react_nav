@@ -65,7 +65,7 @@ export const Navigation = styled.div`
       /* margin-left: 30px; */
     }
     .navContent a {
-      display: none;
+      display: block;
       text-align: center;
       padding: 20px;
       background-color: #00474b;
@@ -73,9 +73,9 @@ export const Navigation = styled.div`
       border-bottom: 2px solid white;
     }
     
-    #toggle:checked + .navContent a {
+    /* #toggle:checked + .navContent a {
       display: block;
-    }
+    } */
   }
 `;
 

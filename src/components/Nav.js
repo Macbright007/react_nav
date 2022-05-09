@@ -8,7 +8,7 @@ const Nav = () => {
         <span>Be.</span>blog
       </h1>
 
-      
+       
       
       <label for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle" />

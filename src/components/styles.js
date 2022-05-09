@@ -21,7 +21,6 @@ export const Navigation = styled.div`
     letter-spacing: 1px;
   }
   span {
-    font-family: "Water Brush", cursive;
     font-size: 3rem;
   }
 
